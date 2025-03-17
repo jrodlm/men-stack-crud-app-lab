@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>State's Visited'</title>
+</head>
+<body>
+    <h1>Add a new state!</h1>
+    <form action="/states" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="flower">Flower:</label>
+        <input type="text" name="flower" id="flower" />
+
+        <div class="checkbox-div">
+            <label for="visited">Visited?</label>
+            <input type="checkbox" name="visited" id="visited" />
+          </div>
+
+        <button type="submit">Add States</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>State Index</title>
+</head>
+ <body>
+   <div class="index-header-div">
+     <h1>All States</h1>
+     <a class="add-state" href="/states/new">Add state</a>
+   </div>
+   <ul>
+     <% allStates.forEach((state)=> { %>
+     <li>
+       <a class="state-cards" href="/states/<%=state._id%>">
+         <%= state.name %>
+       </a>
+     </li>
+     <% }) %>
+   </ul>
+   <a class="root-link" href="/">Back To Home</a>
+ </body>
+</html>

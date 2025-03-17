@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>State View Page</title>
+</head>
+
+<body>
+    <div class="state-details">
+    <h1>Here is your state</h1>
+    <h3>
+        <%= newState.name %>
+    </h3>
+    <% if(newState.visited) { %>
+        <p>You've visited this state! </p>
+    <% } else { %>
+        <p>You have not visited this state!</p>
+    <% } %>
+
+    <% if(newState.flower) { %>
+        <p>State Flower: <%= newState.flower %> </p>
+    <% } %>
+
+    <div class="state-actions">
+    <form 
+    class ="delete=form"
+    action="/states/<%=newState._id%>?_method=DELETE" method="POST">
+        <button class="delete-button" type="submit">
+            Delete <%= newState.name %></button>
+    </form>
+    <a class="edit-link" href="/states/<%= newState._id %>/edit">
+        <div class="edit-text">Edit <%= newState.name %></div>
+    </a>
+    </div>
+   
+    <a class="states-index-link" href="/states">
+        <div class="index-link-text">Back to States</div>
+      </a>
+    </div>
+</body>
+
+</html>
