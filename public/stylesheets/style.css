@@ -149,7 +149,7 @@ body {
   }
  
   .delete-button:hover {
-    background-color: #ffbd59;
+    background-color: #020100;
   }
  
   .delete-button:active {
@@ -189,11 +189,11 @@ body {
     border-radius: 15px;
     align-items: center;
     justify-content: center;
-    border: 2.5px solid #ffbd59;
+    border: 2.5px solid #182b6f;
   }
  
   .state-cards:hover {
-    border: 4px solid #f47b5b;
+    border: 4px solid #182b6f;
   }
  
   .state-cards:active {
